@@ -1,0 +1,150 @@
+.nk__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem 2rem 0;
+  font-family: var(--font-base);
+}
+
+.nk__heading {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.nk__text {
+  font-family: var(--font-base);
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 20px;
+  color: #0c4906f0;
+  margin-bottom: 5px;
+}
+
+.nk__paragraph {
+  font-family: var(--font-base);
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.nk__video1,
+.nk__video2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.nk__video-section1,
+.nk__video-section2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nk__title {
+  font-family: var(--font-base);
+  font-size: 24px;
+  font-weight: bolder;
+  color: #000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px #333;
+  text-align: center;
+}
+.nk__title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #fff;
+  margin: 10px auto;
+}
+
+.nk__video-group1,
+.nk__video-group2 {
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  width: 560px;
+  height: 390px;
+  display: block;
+  margin: 40px;
+  border: 10px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(255, 161, 10, 0.823);
+  background-color: #f5f5f5;
+  transition: all 0.3s ease-in-out;
+}
+
+video:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 15px rgba(255, 161, 10, 0.823);
+  cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 479px) {
+  .nk__video-group1,
+  .nk__video-group2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nk__text {
+    font-size: 25px;
+      line-height: 30px;    
+  }
+  video {
+    width: 300px;
+    height: 300px;
+  }
+  .nk__title{
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 769px) {
+  .nk__video-group1,
+  .nk__video-group2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nk__text {
+    font-size: 30px;    
+   }
+  video {
+    width: 400px;
+    height: 400px;
+  }
+  .nk__title{
+    margin-bottom: 2px;
+  }
+}
+@media only screen and (min-width: 770px) and (max-width: 950px) {
+  .nk__video-group1,
+  .nk__video-group2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nk__text {
+    font-size: 30px;    
+   }
+  video {
+    width: 500px;
+    height: 400px;
+  
+  }  
+}
+@media only screen and (min-width: 950px) and (max-width: 1024px) {
+  video {
+    width: 400px;
+    height: 350px;
+  
+  }  
+}
